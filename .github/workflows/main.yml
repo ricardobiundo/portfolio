@@ -25,5 +25,5 @@ jobs:
       with:
         username: 'ricardobiundo'
         reponame: 'curriculum'
-        cname: 'curriculum.koffiecode.com'
+        cname: 'koffiecode.com'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
