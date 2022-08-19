@@ -40,7 +40,7 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'CurriculumComponent',
     data: () => ({
       items: [
         {
