@@ -3,5 +3,12 @@ module.exports = defineConfig({
   transpileDependencies: [
     'vuetify'
   ],
-  publicPath: '/'
+  publicPath: '/',
+  pages: {
+    index: {
+      // entry for the page
+      entry: 'src/main.js',
+      title: 'Ricardo Marques',
+    },
+  }
 })
