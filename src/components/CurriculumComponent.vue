@@ -12,10 +12,10 @@
                 <img src="../assets/asml.png">
               </v-avatar>
             </template>
-            <template v-slot:opposite>
+            <!-- <template v-slot:opposite>
               <div>ASML</div>
               <div>Feb 2021 - Present · 1 yr 7 mos</div>
-            </template>
+            </template> -->
             <v-card
               color="indigo"
               dark
@@ -28,13 +28,25 @@
                 src="https://eindhovennews.com/wp-content/uploads/2020/01/ASML-Campus-in-Veldhoven-with-logo_43661-696x464.jpg"
               ></v-img>
               <v-card-text class="white text--primary">
-                <div class="mb-4 text-subtitle-2">
-                  ASML • Veldhoven, Netherlands
+                <div class="mb-4 text-subtitle-1 text--secondary">
+                  <v-row>
+                  <v-col cols="6">ASML • Veldhoven, Netherlands</v-col>
+                  <v-col cols="6" class="text-right">Feb 2021 - Present · 1yr 7mos</v-col>
+                  </v-row>
                 </div>
                 <div>
                   I'm currently helping ASML by modernizing and improving its testing tool set and workflow.
+                  </div>
+                  <v-divider light class="ma-4"></v-divider>
+                <div class="mb-4 text-subtitle-1 text--secondary">
+                  Achievements
                 </div>
-                <v-col class="text-right">
+                  <div>
+☆ Introduced four new members to the team and coached them to work in scrum.<br/>
+☆ Developed a web application that the entire community uses to keep track of the severity of the regression introduced by their deliveries.<br/>
+☆ Created a tool used to find the delivery responsible of breaking tests.<br/>
+                </div>
+                <v-col class="text-left">
                   <v-chip
                     v-for="(chip, i) in chips"
                     :key="i"
@@ -48,14 +60,30 @@
                     {{ chip.text }}
                   </v-chip>
                 </v-col>
-                <v-btn
+                <!-- <v-btn
                   color="indigo"
                   class="mx-0"
                   outlined
                 >
                   Learn More
-                </v-btn>
+                </v-btn> -->
+                <!-- <v-spacer></v-spacer>
+                <v-btn
+                  icon
+                  @click="show = !show"
+                  color="grey"
+                >
+                  <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                </v-btn> -->
               </v-card-text>
+              <v-expand-transition>
+                <div v-show="show">
+                  <v-divider></v-divider>
+                  <v-card-text>
+                    Pepe
+                  </v-card-text>
+                </div>
+              </v-expand-transition>
             </v-card>
           </v-timeline-item>
           <v-timeline-item
@@ -94,6 +122,7 @@
   export default {
     name: 'CurriculumComponent',
     data: () => ({
+      show: false,
       items: [
         {
           title: 'Scrum master and fullstack developer',
@@ -122,9 +151,14 @@
       ],
       chips: [
         {
+          color: 'grey',
+          text: 'grafana',
+          icon: 'mdi-chart-pie',
+        },
+        {
           color: 'red',
           text: 'Jenkins',
-          icon: '',
+          icon: 'fa-brands fa-jenkins',
         },
         {
           color: 'primary',
@@ -134,7 +168,7 @@
         {
           color: 'success lighten-2',
           text: 'Django',
-          icon: '',
+          icon: 'mdi-language-python',
         },
         {
           color: 'success',
