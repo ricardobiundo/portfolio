@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nodejs-app:
+    image: node:20-alpine  # You can specify the desired Node.js version here
+    container_name: curriculum
+    volumes:
+      - ./:/curriculum  # Mount your Node.js application code into the container
+    ports:
+      - "8080:8080"
+    working_dir: /curriculum
+    ports:
+      - "8080:8080"  # Map host port 8080 to container port 8080
+    # command: npm start  # Replace with your start command
+    tty: true
