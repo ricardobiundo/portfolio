@@ -5,10 +5,9 @@ services:
     container_name: curriculum
     volumes:
       - ./:/curriculum  # Mount your Node.js application code into the container
-    ports:
-      - "8080:8080"
     working_dir: /curriculum
     ports:
-      - "8080:8080"  # Map host port 8080 to container port 8080
+      - "3000:3000"  # Map host port 8080 to container port 8080
     # command: npm start  # Replace with your start command
+    user: 1000:1000
     tty: true
