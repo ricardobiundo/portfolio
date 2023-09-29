@@ -1,24 +1,24 @@
 import emoji from "react-easy-emoji";
 
 export const greetings = {
-  name: "Brendan Glancy",
-  title: "Welcome.",
+  name: "Ricardo Marques",
+  title: "Welcome",
   description:
-    "I am Student / Software Developer, learning Full Stack Web Development and Cyber Security. I have experience building Applications with Vanilla JavaScript, React,  Vue,  Node,  Java,  Spring Boot, Python,  Django and some other cool libraries and frameworks.",
-  resumeLink: "https://brendanglancy.github.io/Resume/",
+    "I am a Full Stack Sofware / Lead Developer, with passion for products and people. I have 8 years of experience building applications with Python, Django, JavaScript, React, Vue, Node, Golang and some other cool libraries and frameworks.",
+  resumeLink: "https://ricardobiundo.github.io/Resume/",
 };
 
 export const openSource = {
-  githubUserName: "brendanglancy",
+  githubUserName: "ricardobiundo",
 };
 
 export const contact = {};
 
 export const socialLinks = {
-  url: 'https://www.ovsknife.com/home',
-  instagram: "https://www.instagram.com/brendanglance/",
-  github: "https://github.com/brendanglancy",
-  linkedin: "https://www.linkedin.com/in/brendan-glancy/",
+  //url: 'https://www.koffiecode.com/',
+  //instagram: "https://www.instagram.com/ricardobiundo/",
+  //github: "https://github.com/ricardobiundo",
+  linkedin: "https://www.linkedin.com/in/ricardobiundo/",
   discord: "https://www.hackerrank.com/Bglance68",
   blog: "https://brendanglancy.github.io/",
 };
@@ -32,13 +32,13 @@ export const skillsSection = {
       lottieAnimationFile: "/lottie/webdev.json", // Path of Lottie Animation JSON File
       skills: [
         emoji(
-          "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications."
+          "⚡ Develop robust web applications, platforms and pipelines."
         ),
         emoji(
-          "⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks."
+          "⚡ Collaborative team player with focus on deliverables."
         ),
         emoji(
-          "⚡ Cyber Security, HackTheBox Globally Ranked 534, Top 2% in PicoCTF 2022"
+          "⚡ Capacity to lead and coach fellow members."
         ),
       ],
       softwareSkills: [
@@ -47,8 +47,12 @@ export const skillsSection = {
           fontAwesomeClassname: "logos:python",
         },
         {
-          skillName: "Java",
-          fontAwesomeClassname: "logos:java",
+          skillName: "Django",
+          fontAwesomeClassname: "logos:django-icon",
+        },
+        {
+          skillName: "FastApi",
+          fontAwesomeClassname: "logos:fastapi-icon",
         },
         {
           skillName: "reactjs",
@@ -61,10 +65,6 @@ export const skillsSection = {
         {
           skillName: "nodejs",
           fontAwesomeClassname: "logos:nodejs-icon",
-        },
-        {
-          skillName: "astro",
-          fontAwesomeClassname: "vscode-icons:file-type-astro",
         },
         {
           skillName: "npm",
@@ -91,24 +91,28 @@ export const skillsSection = {
           fontAwesomeClassname: "logos:mysql-icon",
         },
         {
-          skillName: "Vercel",
-          fontAwesomeClassname: "logos:vercel-icon",
-        },
-        {
           skillName: "NextJS",
           fontAwesomeClassname: "logos:nextjs-icon",
         },
         {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "logos:mongodb-icon",
+          skillName: "Jenkins",
+          fontAwesomeClassname: "logos:jenkins",
         },
         {
-          skillName: "Django",
-          fontAwesomeClassname: "logos:django-icon",
+          skillName: "Kubernetes",
+          fontAwesomeClassname: "logos:kubernetes",
         },
         {
-          skillName: "spring-boot",
-          fontAwesomeClassname: "logos:spring-icon",
+          skillName: "Helm",
+          fontAwesomeClassname: "logos:helm",
+        },
+        {
+          skillName: "Terraform",
+          fontAwesomeClassname: "logos:terraform-icon",
+        },
+        {
+          skillName: "Google Cloud",
+          fontAwesomeClassname: "logos:google-cloud",
         },
       ],
     },
@@ -132,8 +136,8 @@ export const SkillBars = [
 
 export const educationInfo = [
   {
-    schoolName: "Akron University",
-    subHeader: "Bachelor of Science in Computer Science",
+    schoolName: "Universidad Simón Bolivar",
+    subHeader: "Masters in Electronics Engineering",
     duration: "August 2021 - Present",
     grade: "3.8 GPA",
     desc: "Programming CIS degree",
@@ -143,29 +147,25 @@ export const educationInfo = [
     ],
     github: "https://github.com/BrendanGlancy/akron/",
   },
-  {
-    schoolName: "Tech Elevator",
-    subHeader: "Full Stack Development",
-    duration: "September 2020 - December 2020",
-    desc: "Programming Bootcamp to learn Full Stack Development",
-    descBullets: [
-      "  Object-Oriented Programming: Java",
-      "  Web Application Development: HTML, CSS, JavaScript, Vue.js, APIs using Spring Boot, Tomcat",
-      "  Database Programming: Spring JDBC/DAO, Table Design, SQL, PostgreSQL, E/R diagrams",
-      "  Completed 1000+ hours of Java, Spring, SQL, and JavaScript training",
-      "  Completed 100+ hours of pair programming on group projects",
-    ],
-    github: "https://github.com/BrendanGlancy/BreweryLocater",
-  },
 ];
 
 export const experience = [
   {
-    role: "Information Technology",
-    company: "Chamber of Commerce",
+    role: "Full Stack Tech Lead",
+    company: "ASML",
     companylogo: "/img/icons/common/chamber.jpeg",
-    date: "June 2019 – Present",
-    desc: "Communicate with managers to set up computers used on in the office, Assess and troubleshoot computer problems brought by managers, faculty a. Maintain upkeep of computers, servers, and 20+ websites used by the Chamber and local businesses",
+    date: "Feburary 2021 – Present",
+    desc: "lljlfd",
+  },
+  {
+    role: "Software Developer Intern",
+    company: "OVS Knife Co.",
+    companylogo: "/img/icons/common/ovs.png",
+    date: "December 2022",
+    descBullets: [
+      "  As a Software Developer Intern at OVS Knife Co, I am responsible for the development and maintenance of the company's web application. Utilizing my skills in Next.js, React, MongoDB, Node.js, Django, and Express.js.",
+      "  I work independently to implement new features, improve the overall user experience and make sure the platform is reliable and fast for our customers.",
+    ],
   },
   {
     role: "Software Developer Intern",
@@ -222,7 +222,7 @@ export const feedbacks = [
 ];
 
 export const seoData = {
-  title: "Brendan's Portfolio",
+  title: "Ricardo Marques's Portfolio",
   description: "Full Stack Developer showcasing my work and experience.",
   image: "https://avatars.githubusercontent.com/u/61941978?v=4",
   url: "https://brendanglancy.software/",

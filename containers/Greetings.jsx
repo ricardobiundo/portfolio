@@ -29,7 +29,7 @@ const Greetings = () => {
             <ParticleBg type="polygon" bg={true} num={1} />
           </div>
           <Container className="py-lg-md d-flex">
-            <div className="col px-0">
+            <div className="col pt-6 px-0">
               <Row>
                 <Col lg="6">
                   <h1 className="display-3 text-white">

@@ -12,8 +12,8 @@ const Skills = () => {
 			<p className="lead">{skillsSection.subTitle}</p>
 			{skillsSection.data.map((section, index) => {
 				return (
-					<Row className="my-5" key={index}>
-						<Col lg="6" className="order-2 order-lg-1">
+					<Row className="my-6" key={index}>
+						<Col lg="6" className="mt-3 order-2 order-lg-1">
 							<Fade left duration={2000}>
 								<DisplayLottie
 									animationPath={section.lottieAnimationFile}
@@ -22,8 +22,8 @@ const Skills = () => {
 						</Col>
 						<Col lg="6" className="order-1 order-lg-2">
 							<Fade right duration={2000}>
-								<h3 className="h3 mb-2">{section.title}</h3>
-								<div className="d-flex justify-content-center flex-wrap mb-2">
+								<h3 className="h3 mb-4">{section.title}</h3>
+								<div className="d-flex justify-content-center flex-wrap mb-5">
 									{section.softwareSkills.map((skill, i) => {
 										return (
 											<Fragment key={i}>
