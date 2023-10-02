@@ -118,6 +118,11 @@ export const skillsSection = {
     },
   ],
 };
+ 
+export const timeline = {
+  title: "My experience",
+  subTitle: "I focus on modernizing and developing products with the help of multidisciplinary teams.",
+}
 
 export const SkillBars = [
   {
