@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - id: Build-Vue
-      uses: ricardobiundo/ReactPagesAction@1.0.1
+      uses: ricardobiundo/ReactPagesAction@1.0.2
       with:
         username: 'ricardobiundo'
         reponame: 'curriculum'
