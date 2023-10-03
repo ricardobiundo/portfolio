@@ -1,0 +1,11 @@
+body > div:first-child {
+	overflow-x: hidden;
+}
+
+.timeline-color {
+  color: #073b4c;
+}
+
+.vertical-timeline-element-date {
+  text-align: left;
+}
