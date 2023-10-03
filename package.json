@@ -10,6 +10,7 @@
     "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
     "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "start": "NODE_OPTIONS=--openssl-legacy-provider next start",
+    "export": "NODE_OPTIONS=--openssl-legacy-provider next export",
     "lint": "next lint"
   },
   "dependencies": {
