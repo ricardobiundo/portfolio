@@ -27,3 +27,4 @@ jobs:
         reponame: 'curriculum'
         cname: 'koffiecode.com'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+        useryarn: true
