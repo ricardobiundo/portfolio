@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Build-Vue
-      uses: ./main.yml
+      uses: ./.github/workflows/action.yml
       with:
         username: 'ricardobiundo'
         reponame: 'curriculum'
