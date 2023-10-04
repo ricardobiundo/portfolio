@@ -1,10 +1,10 @@
 # Curriculum
 Welcome to my software developer portfolio template built with Next.js and Bootstrap, which helps you showcase your work and skills as a software developer. With this portfolio, you'll be able to impress potential employers or clients with your work and expertise.
 
-The page is hosted for free in github pages built and deployed using github actions.
+The page is hosted for free in github pages, built and deployed using github actions.
 
 ## Demo
-To view a live demo, click here: https://brendanglancy.software/
+To view a live demo, click here: https://koffiecode.com
 
 ## Prerequisites
 * You can easily run the application using the supplied docker-compose file which will start a nodejs server and mount the current folder. 
@@ -42,7 +42,7 @@ yarn lint
 
 ## Customization
 
-## Linking Portfolio to Github
+### Linking Portfolio to Github
 You can link your portfolio to your Github account by changing the githubUserName in `portfolio.js` file.
 
 ```javascript
