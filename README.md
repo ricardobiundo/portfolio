@@ -50,8 +50,15 @@ You can link your portfolio to your Github account by changing the githubUserNam
   githubUserName: 'YOUR GITHUB USERNAME HERE',
 ```
 
-#### Using Emojis
+### Using Emojis
 For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` function and pass the text you need as an argument. This would help in keeping emojis compatible across different browsers and platforms.
+
+### Sending emails using the form
+I'm using [emailjs](https://www.emailjs.com/) for free in order to send mails using the form at the end of the page. To replicate this you should head to their webpage, create and email service and an email template.
+
+Please keep in mind that you can use the following variables that are passed along from the form in your template: {{user_name}}, {{user_email}} and {{user_name}}.
+
+Once you have set it up you need to create the following Action Secrets in your github repository settings: NEXT_PUBLIC_EMAILJS_PUBLIC_KEY, NEXT_PUBLIC_EMAILJS_SERVICE_ID and NEXT_PUBLIC_EMAILJS_TEMPLATE_ID. This should match the values you can kind in the [emailjs dashboard](https://dashboard.emailjs.com/admin/templates/ld3ff7n).
 
 ## Technologies Used
 -   [Next.js](https://nextjs.org/)
