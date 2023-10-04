@@ -8,6 +8,10 @@ export const greetings = {
   resumeLink: "https://ricardobiundo.github.io/Resume/",
 };
 
+export const openSource = {
+  githubUserName: "ricardobiundo",
+}
+
 export const socialLinks = {
   //url: 'https://www.koffiecode.com/',
   //instagram: "https://www.instagram.com/ricardobiundo/",
