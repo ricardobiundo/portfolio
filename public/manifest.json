@@ -4,12 +4,12 @@
   "description": "A passionate Full Stack Web Developer and Mobile App Developer.",
     "icons": [
       {
-        "src": "./favicon.png",
+        "src": "./favicon.ico",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "./favicon.png",
+        "src": "./favicon.ico",
         "type": "image/png",
         "sizes": "512x512"
       }
