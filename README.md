@@ -1,4 +1,4 @@
-# Curriculum
+# Portfolio 
 Welcome to my software developer portfolio template built with Next.js and Bootstrap, which helps you showcase your work and skills as a software developer. With this portfolio, you'll be able to impress potential employers or clients with your work and expertise.
 
 The page is hosted for free in github pages, built and deployed using github actions.
@@ -59,6 +59,23 @@ I'm using [emailjs](https://www.emailjs.com/) for free in order to send mails us
 Please keep in mind that you can use the following variables that are passed along from the form in your template: {{user_name}}, {{user_email}} and {{user_name}}.
 
 Once you have set it up you need to create the following Action Secrets in your github repository settings: NEXT_PUBLIC_EMAILJS_PUBLIC_KEY, NEXT_PUBLIC_EMAILJS_SERVICE_ID and NEXT_PUBLIC_EMAILJS_TEMPLATE_ID. These should match the values you can get from the [emailjs dashboard](https://dashboard.emailjs.com/admin/templates/ld3ff7n).
+
+Make sure you pass the secrets as environmental variables during your deployment by modifying the main.yaml:
+
+```
+jobs:
+  build_next:
+    runs-on: ubuntu-latest
+    name: Build Next
+    steps:
+    - uses: actions/checkout@v3
+    - id: Build-Next
+      env:
+        NEXT_PUBLIC_EMAILJS_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}
+        NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID }}
+        NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}
+ 
+```
 
 ## Technologies Used
 -   [Next.js](https://nextjs.org/)
