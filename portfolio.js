@@ -19,8 +19,8 @@ export const socialLinks = {
   //instagram: "https://www.instagram.com/ricardobiundo/",
   //github: "https://github.com/ricardobiundo",
   linkedin: "https://www.linkedin.com/in/ricardobiundo/",
-  discord: "https://www.hackerrank.com/Bglance68",
-  blog: "https://brendanglancy.github.io/",
+  discord: "",
+  blog: "",
 };
 
 export const skillsSection = {
@@ -150,7 +150,7 @@ export const educationInfo = [
       "The Bachelor of Science in Computer Information Systems (CIS) - Programming degree option allows students to attain knowledge of effective software application development, client/server application development, and database application development and management for businesses.",
       "The CIS - Programming degree option is designed to prepare students for careers in the field of software engineering and development.",
     ],
-    github: "https://github.com/BrendanGlancy/akron/",
+    github: "https://github.com/ricardobiundo",
   },
 ];
 
