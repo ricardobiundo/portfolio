@@ -2,12 +2,12 @@ version: '3'
 services:
   nodejs-app:
     image: node:20-alpine  # You can specify the desired Node.js version here
-    container_name: curriculum
+    container_name: portfolio
     volumes:
-      - ./:/curriculum  # Mount your Node.js application code into the container
-    working_dir: /curriculum
+      - ./:/portfolio  # Mount your Node.js application code into the container
+    working_dir: /portfolio
     ports:
       - "3000:3000"  # Map host port 8080 to container port 8080
-    # command: npm start  # Replace with your start command
-    user: 1000:1000
+    # command: yarn dev  # Replace with your start command
+    user: 1000:1000 # Replace with your host user_id and group_id
     tty: true
